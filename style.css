@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin: 0;
 }
 
 
@@ -48,35 +49,36 @@ section {
 
 /* stuff for nav bars */
 
-.nav {
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    position: sticky;
-    top: 0;
-    bottom: 0;
-}
+
 
 .nav-button {
-    height: 100%;
-    width: 25%;
+    height: 10vh;
+    width: 25vw;
     border: 1px solid black;
     background-color: rgba(190, 110, 110, 0.5);
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    display: flex;
 }
 
 .first {
     margin-left: 0;
+    z-index: 10;
 }
 
 .second {
     margin-left: 25%;
+    z-index: 9;
 }
 
 .third {
     margin-left: 50%;
+    z-index: 8;
 }
 
 .fourth {
     margin-left: 75%;
+    z-index: 11;
 }
