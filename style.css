@@ -112,6 +112,7 @@ a {
     left: 5%;
     top: 5%;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 
@@ -141,25 +142,59 @@ a {
 .GA-projects-nav {
     position: absolute;
     top: 25%;
-    left: 30%;
+    left: 20%;
+    cursor: pointer;
 }
 
 .Professional-projects-nav {
     position: absolute;
     top: 25%;
-    right: 30%;
+    right: 20%;
+    cursor: pointer;
 }
 
 .Personal-projects-nav {
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     left: center;
+    cursor: pointer;
 }
 
+/*carousel stuff*/
 
+.projects-carousel {
+    height: 50vmin;
+    width: 50vmin;
+    background-color: red;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 5%;
+}
 
+.carousel-button {
+    height: 5vmin;
+    width: 5vmin;
+    position: absolute;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4vmin;
+}
 
+.carousel-button:hover {
+    cursor: pointer;
+}
 
+.carousel-previous {
+    left: 14%;
+}
+
+.carousel-next {
+    right: 14%;
+}
 
 
 
