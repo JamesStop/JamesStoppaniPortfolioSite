@@ -6,7 +6,17 @@
 
 /*----- app's state (variables) -----*/
 
+//GA carousel
+let currentImgIndexGA = 0;
+let previousImgIndexGA = 0;
 
+//Professional carousel
+let currentImgIndexProfessional = 0;
+let previousImgIndexProfessional = 0;
+
+//Personal carousel
+let currentImgIndexPersonal = 0;
+let previousImgIndexPersonal = 0;
 
 
 /*----- cached element references -----*/
@@ -34,6 +44,29 @@ const projectsProfessionalSection = document.querySelector('#projectsProfessiona
 
     //project personal section
 const projectsPersonalSection = document.querySelector('#projectsPersonal');
+
+
+//GA projects carousel
+const nextButtonGA = document.querySelector('#carouselNextGA');
+const prevButtonGA = document.querySelector('#carouselPrevGA');
+const imagesGA = document.querySelectorAll('.carousel-item-GA');
+
+
+//Professional projects carousel
+const nextButtonProfessional = document.querySelector(
+	'#carouselNextProfessional'
+);
+const prevButtonProfessional = document.querySelector(
+	'#carouselPrevProfessional'
+);
+const imagesProfessional = document.querySelectorAll(
+	'.carousel-item-Professional'
+);
+
+//Personal projects carousel
+const nextButtonPersonal = document.querySelector('#carouselNextPersonal');
+const prevButtonPersonal = document.querySelector('#carouselPrevPersonal');
+const imagesPersonal = document.querySelectorAll('.carousel-item-Personal');
 
 /*----- event listeners -----*/
 
@@ -68,7 +101,7 @@ function something(event) {
 	}
 }
 
-//projects function
+//projects options page functions
 function projectsShowClick(event) {
   if (event.target.className == 'nav-shower') {
     projectNavGA.classList.remove('hide')
@@ -122,3 +155,73 @@ function projectsNavHide(event) {
 		projectNavPersonal.classList.add('hide');
 	}
 }
+
+//GA carousel movement
+nextButtonGA.addEventListener('click', function (event) {
+	event.preventDefault;
+	previousImgIndexGA = currentImgIndexGA;
+	currentImgIndexGA += 1;
+	if (currentImgIndexGA >= imagesGA.length) {
+		currentImgIndexGA = 0;
+	}
+	imagesGA[previousImgIndexGA].style.display = 'none';
+	imagesGA[currentImgIndexGA].style.display = 'flex';
+});
+
+prevButtonGA.addEventListener('click', function (event) {
+	event.preventDefault;
+	previousImgIndexGA = currentImgIndexGA;
+	currentImgIndexGA -= 1;
+	if (currentImgIndexGA < 0) {
+		currentImgIndexGA = imagesGA.length - 1;
+	}
+	imagesGA[previousImgIndexGA].style.display = 'none';
+	imagesGA[currentImgIndexGA].style.display = 'flex';
+});
+
+//Professional carousel movement
+nextButtonProfessional.addEventListener('click', function (event) {
+	event.preventDefault;
+	previousImgIndexProfessional = currentImgIndexProfessional;
+	currentImgIndexProfessional += 1;
+	if (currentImgIndexProfessional >= imagesProfessional.length) {
+		currentImgIndexProfessional = 0;
+	}
+	imagesProfessional[previousImgIndexProfessional].style.display = 'none';
+	imagesProfessional[currentImgIndexProfessional].style.display = 'flex';
+});
+
+prevButtonProfessional.addEventListener('click', function (event) {
+	event.preventDefault;
+	previousImgIndexProfessional = currentImgIndexProfessional;
+	currentImgIndexProfessional -= 1;
+	if (currentImgIndexProfessional < 0) {
+		currentImgIndexProfessional = imagesProfessional.length - 1;
+	}
+	imagesProfessional[previousImgIndexProfessional].style.display = 'none';
+	imagesProfessional[currentImgIndexProfessional].style.display = 'flex';
+});
+
+
+//Personal carousel movement
+nextButtonPersonal.addEventListener('click', function (event) {
+	event.preventDefault;
+	previousImgIndexPersonal = currentImgIndexPersonal;
+	currentImgIndexPersonal += 1;
+	if (currentImgIndexPersonal >= imagesPersonal.length) {
+		currentImgIndexPersonal = 0;
+	}
+	imagesPersonal[previousImgIndexPersonal].style.display = 'none';
+	imagesPersonal[currentImgIndexPersonal].style.display = 'flex';
+});
+
+prevButtonPersonal.addEventListener('click', function (event) {
+	event.preventDefault;
+	previousImgIndexPersonal = currentImgIndexPersonal;
+	currentImgIndexPersonal -= 1;
+	if (currentImgIndexPersonal < 0) {
+		currentImgIndexPersonal = imagesPersonal.length - 1;
+	}
+	imagesPersonal[previousImgIndexPersonal].style.display = 'none';
+	imagesPersonal[currentImgIndexPersonal].style.display = 'flex';
+});

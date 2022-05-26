@@ -165,9 +165,8 @@ a {
 .projects-carousel {
     height: 50vmin;
     width: 50vmin;
-    background-color: red;
+    background-color: black;
     position: absolute;
-    border: 5px solid black;
     border-radius: 5%;
 }
 
@@ -197,10 +196,82 @@ a {
 }
 
 
+/*Ga specific*/
+.carousel-item-GA {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
 
+.carousel-item-GA:first-of-type {
+    display: flex;
+}
 
+.carousel-item-GA img {
+    height: 95%;
+    width: 95%;
+    border-radius: 4%;
+}
 
+/*Professional specific*/
+.carousel-item-Professional {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
 
+.carousel-item-Professional:first-of-type {
+    display: flex;
+}
+
+.carousel-item-Professional img {
+    height: 95%;
+    width: 95%;
+    border-radius: 4%;
+}
+
+/*Personal specific*/
+.carousel-item-Personal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.carousel-item-Personal:first-of-type {
+    display: flex;
+}
+
+.carousel-item-Personal img {
+    height: 95%;
+    width: 95%;
+    border-radius: 4%;
+}
+
+.carousel-title {
+    width: 95%;
+    height: 10%;
+    position: absolute;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.carousel-description {
+    width: 95%;
+    height: 20%;
+    position: absolute;
+    bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
 
 
