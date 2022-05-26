@@ -30,6 +30,7 @@ main {
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    scroll-snap-type: y proximity;
 }
 
 main::-webkit-scrollbar {
@@ -38,33 +39,12 @@ main::-webkit-scrollbar {
 
 section {
     border: 1px solid black;
-}
-
-.nav {
-    height: 10vh;
+    scroll-snap-align: start;
+    height: 85vh;
     width: 100%;
-    display: flex;
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(190, 110, 110, 0.5);
 }
 
-.opener {
-    height: 75vh;
-    width: 100%;
-    position: relative;
-}
 
-.main-sections {
-    height: 75vh;
-    width: 100%;
-    position: relative;
-}
-
-.section4 {
-    height: 75vh;
-}
 
 /* stuff for nav bars */
 
@@ -75,5 +55,28 @@ section {
     position: sticky;
     top: 0;
     bottom: 0;
+}
+
+.nav-button {
+    height: 100%;
+    width: 25%;
+    border: 1px solid black;
     background-color: rgba(190, 110, 110, 0.5);
+    box-sizing: border-box;
+}
+
+.first {
+    margin-left: 0;
+}
+
+.second {
+    margin-left: 25%;
+}
+
+.third {
+    margin-left: 50%;
+}
+
+.fourth {
+    margin-left: 75%;
 }
