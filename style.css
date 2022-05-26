@@ -40,10 +40,18 @@ main {
     scroll-behavior: smooth;
     position: fixed;
     margin-top: 10vh;
+    
 }
 
 main::-webkit-scrollbar {
     display: none;
+}
+
+.scroll {
+    height: 465vh;
+    scroll-snap-type: y proximity;
+    background-image: linear-gradient(rgb(133, 236, 219), rgb(123, 194, 241));
+    scroll-behavior: smooth;
 }
 
 section {
