@@ -7,15 +7,15 @@ body {
 }
 
 footer {
-    min-height: 5vh;
     height: 5vh;
     width: 100vw;
+    background-color: rgb(241, 209, 209);
 }
 
 header {
     height: 10vh;
     width: 100vw;
-
+    background-color: rgb(241, 209, 209);
 }
 
 
@@ -25,10 +25,7 @@ header {
 main {
     min-height: 85vh;
     max-height: 85vh;
-    height: 85vh;
     width: 100vw;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -42,14 +39,22 @@ section {
     border: 1px solid black;
 }
 
+.nav {
+    height: 10vh;
+}
+
 .opener {
-    height: 85vh;
+    height: 75vh;
     width: 100%;
     position: relative;
 }
 
 .main-sections {
-    height: 85vh;
+    height: 65vh;
     width: 100%;
     position: relative;
+}
+
+.section4 {
+    height: 75vh;
 }

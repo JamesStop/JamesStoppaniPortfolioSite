@@ -33,6 +33,46 @@ const main = document.querySelector('main');
 /*----- functions -----*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//function for smoothscrolling
+
+/*
+
+
 function lerp(start, end, t) {
     return start * (1 - t) + end * t;
 }
@@ -50,3 +90,5 @@ function smoothScroll() {
 
 init();
 smoothScroll();
+
+*/
