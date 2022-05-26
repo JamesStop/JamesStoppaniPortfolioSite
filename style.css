@@ -51,6 +51,9 @@ section {
     scroll-snap-align: start;
     height: 85vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -90,4 +93,98 @@ a {
 
 .fourth {
     margin-left: 75%;
+}
+
+/* Projects Section*/
+
+.projects {
+    height: 65vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-projects {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    border: 1px solid black;
+}
+
+
+
+.projects-start {
+
+}
+
+.projects-GA {
+    /* background-color: red; */
+}
+
+.projects-professional {
+    /* background-color: blue; */
+}
+
+.projects-personal {
+    /* background-color: green; */
+}
+
+.nav-shower {
+    /* font-size: 10vw; */
+}
+
+
+
+.GA-projects-nav {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+
+.Professional-projects-nav {
+    position: absolute;
+    top: 25%;
+    right: 30%;
+}
+
+.Personal-projects-nav {
+    position: absolute;
+    bottom: 25%;
+    left: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Display Helpers*/
+
+.hide {
+    display: none;
 }
