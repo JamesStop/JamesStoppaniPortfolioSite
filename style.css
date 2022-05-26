@@ -6,6 +6,7 @@ body {
     overflow: hidden;
 }
 
+
 footer {
     height: 5vh;
     width: 100vw;
@@ -41,6 +42,12 @@ section {
 
 .nav {
     height: 10vh;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(190, 110, 110, 0.5);
 }
 
 .opener {
@@ -50,11 +57,23 @@ section {
 }
 
 .main-sections {
-    height: 65vh;
+    height: 75vh;
     width: 100%;
     position: relative;
 }
 
 .section4 {
     height: 75vh;
+}
+
+/* stuff for nav bars */
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(190, 110, 110, 0.5);
 }
