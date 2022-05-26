@@ -114,7 +114,8 @@ function projectsNavHide(event) {
 		event.target.id != 'ProfessionalProjectNav' &&
 		event.target.id != 'PersonalProjectNav' &&
 		event.target.id != 'projectsNavShower' &&
-		event.target.id != 'projectsNav'
+		event.target.id != 'projectsNav' &&
+		event.target.id != 'projects-section'
 	) {
 		projectNavGA.classList.add('hide');
 		projectNavProfessional.classList.add('hide');
