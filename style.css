@@ -12,12 +12,17 @@ footer {
     height: 5vh;
     width: 100vw;
     background-color: rgb(241, 209, 209);
+    position: fixed;
+    bottom: 0;
 }
 
 header {
     height: 10vh;
     width: 100vw;
     background-color: rgb(241, 209, 209);
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 
@@ -33,6 +38,8 @@ main {
     scrollbar-width: none;
     scroll-snap-type: y proximity;
     scroll-behavior: smooth;
+    position: fixed;
+    margin-top: 10vh;
 }
 
 main::-webkit-scrollbar {
@@ -50,7 +57,10 @@ section {
 
 /* stuff for nav bars */
 
-
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 .nav-button {
     height: 10vh;
@@ -62,24 +72,22 @@ section {
     top: 0;
     bottom: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .first {
     margin-left: 0;
-    z-index: 10;
 }
 
 .second {
     margin-left: 25%;
-    z-index: 9;
 }
 
 .third {
     margin-left: 50%;
-    z-index: 8;
 }
 
 .fourth {
     margin-left: 75%;
-    z-index: 11;
 }

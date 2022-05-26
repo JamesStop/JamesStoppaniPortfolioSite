@@ -29,7 +29,6 @@ main.addEventListener('click', something)
 
 
 function something(event) {
-    console.log(event)
     if (event.target.id == 'first') {
         console.log('1');
     }
