@@ -52,7 +52,11 @@ main::-webkit-scrollbar {
     scroll-snap-type: y proximity;
     background-image: linear-gradient(rgb(133, 236, 219), rgb(123, 194, 241));
     scroll-behavior: smooth;
+    background-image: url(/assets/sky.jpg);
+    background-size:  auto 100%;
 }
+
+
 
 section {
     border: 1px solid black;
@@ -64,7 +68,9 @@ section {
     align-items: center;
 }
 
-
+/* .opener {
+    background-image: url(/assets/bigthink.png);
+} */
 
 /* stuff for nav bars */
 
@@ -76,8 +82,7 @@ a {
 .nav-button {
     height: 10vh;
     width: 25vw;
-    border: 1px solid black;
-    background-color: rgba(190, 110, 110, 0.5);
+    border: 5px solid black;
     box-sizing: border-box;
     position: sticky;
     top: 0;
@@ -89,18 +94,22 @@ a {
 
 .first {
     margin-left: 0;
+    background-color: rgba(131, 227, 224, 0.5);
 }
 
 .second {
     margin-left: 25%;
+    background-color: rgba(129, 218, 228, 0.5);
 }
 
 .third {
     margin-left: 50%;
+    background-color: rgba(127, 210, 233, 0.5);
 }
 
 .fourth {
     margin-left: 75%;
+    background-color: rgba(124, 201, 237, 0.5);
 }
 
 /* Projects Section*/
@@ -143,6 +152,13 @@ a {
 
 .nav-shower {
     /* font-size: 10vw; */
+    background-image: url("assets/bigthink.png");
+    height: 20%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
 }
 
 
