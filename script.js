@@ -26,7 +26,24 @@ const body = document.querySelector('body');
 //element reference for whole main section
 const main = document.querySelector('main');
 
-//element reference for projects section
+/* 
+
+element references for experience section
+
+*/
+
+const experienceNav = document.querySelector('.experience-nav-list');
+const experienceResume = document.querySelector('#resume-display');
+const experienceEpoll = document.querySelector('#EPoll-display');
+
+
+
+/* 
+
+element references for projects section 
+
+*/
+
 const projectSection = document.querySelector('#projects-section');
 
     //project nav section
@@ -68,12 +85,22 @@ const nextButtonPersonal = document.querySelector('#carouselNextPersonal');
 const prevButtonPersonal = document.querySelector('#carouselPrevPersonal');
 const imagesPersonal = document.querySelectorAll('.carousel-item-Personal');
 
+
+
+
+
 /*----- event listeners -----*/
 
 
 
 //event listener for whole main section
 main.addEventListener('click', something)
+
+
+//event listener for experiences section
+experienceNav.addEventListener('mouseover', showExperience)
+experienceNav.addEventListener('click', showExperience);
+
 
 //event listener projects section
 projectSection.addEventListener('click', projectsShowClick)
@@ -88,18 +115,28 @@ body.addEventListener('mouseover', projectsNavHide)
 
 function something(event) {
     if (event.target.id == 'first') {
-        console.log('1');
     }
     if (event.target.id == 'second') {
-		console.log('2');
 	}
     if (event.target.id == 'third') {
-		console.log('3');
 	}
     if (event.target.id == 'fourth') {
-		console.log('4');
 	}
 }
+
+
+//experiences show function
+function showExperience(event) {
+	if (event.target.id == 'experience-resume') {
+		experienceResume.classList.remove('hide');
+		experienceEpoll.classList.add('hide');
+	}
+	if (event.target.id == 'experience-EPoll') {
+		experienceResume.classList.add('hide');
+		experienceEpoll.classList.remove('hide');
+	}
+}
+
 
 //projects options page functions
 function projectsShowClick(event) {

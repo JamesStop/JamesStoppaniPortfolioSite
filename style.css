@@ -5,13 +5,15 @@ body {
     flex-direction: column;
     overflow: hidden;
     margin: 0;
+    background-image: url(/assets/pinksky.jpg);
+    background-size: 100% 100%;
 }
 
 
 footer {
     height: 5vh;
     width: 100vw;
-    background-color: rgb(241, 209, 209);
+    /* background-color: rgb(241, 209, 209); */
     position: fixed;
     bottom: 0;
 }
@@ -19,7 +21,7 @@ footer {
 header {
     height: 10vh;
     width: 100vw;
-    background-color: rgb(241, 209, 209);
+    /* background-color: rgb(241, 209, 209); */
     position: fixed;
     top: 0;
     z-index: 1;
@@ -44,7 +46,6 @@ main {
     scroll-behavior: smooth;
     position: fixed;
     margin-top: 10vh;
-    
 }
 
 main::-webkit-scrollbar {
@@ -56,7 +57,7 @@ main::-webkit-scrollbar {
     scroll-snap-type: y proximity;
     background-image: linear-gradient(rgb(133, 236, 219), rgb(123, 194, 241));
     scroll-behavior: smooth;
-    background-image: url(/assets/sky.jpg);
+    background-image: url(/assets/skylong.png);
     background-size:  auto 100%;
 }
 
@@ -121,10 +122,9 @@ a {
 .center-area {
     height: 65vh;
     width: 100%;
-    /* background-color: red; */
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -134,13 +134,23 @@ a {
 /* Experience Section */
 
 .experience-nav-list {
-    height: 100%;
-    width: 20%;
+    height:100%;
+    width: 15%;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .experience-display {
-    height:
+    height: 100%;
+    width: 50%;
+    background-color: white;
+}
+
+.experiences {
+    height: 100%;
+    width: 100%;
 }
 
 /* Projects Section*/
