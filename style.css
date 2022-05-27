@@ -23,6 +23,10 @@ header {
     position: fixed;
     top: 0;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
 }
 
 
@@ -112,9 +116,9 @@ a {
     background-color: rgba(124, 201, 237, 0.5);
 }
 
-/* Projects Section*/
+/* sections general*/
 
-.projects {
+.center-area {
     height: 65vh;
     width: 100%;
     /* background-color: red; */
@@ -123,6 +127,35 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+/* About me section */
+
+
+/* Experience Section */
+
+.experience-nav-list {
+    height: 100%;
+    width: 20%;
+    background-color: white;
+}
+
+.experience-display {
+    height:
+}
+
+/* Projects Section*/
+
+/*
+.projects {
+    height: 65vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+
 
 .back-projects {
     position: absolute;
@@ -299,7 +332,7 @@ a {
 
 
 
-
+/* Contact Section */
 
 
 
