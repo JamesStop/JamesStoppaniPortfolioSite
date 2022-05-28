@@ -49,9 +49,9 @@ const projectSection = document.querySelector('#projects-section');
     //project nav section
 const projectsNavSection = document.querySelector('#projectsNav');
 const projectNavShower = document.querySelector('#projectsNavShower');
-const projectNavGA = document.querySelector('#GAProjectNav');
-const projectNavProfessional = document.querySelector('#ProfessionalProjectNav');
-const projectNavPersonal = document.querySelector('#PersonalProjectNav');
+const projectNavGA = document.querySelector('#cloud2');
+const projectNavProfessional = document.querySelector('#cloud3');
+const projectNavPersonal = document.querySelector('#cloud4');
 
     //project GA section
 const projectsGASection = document.querySelector('#projectsGA');
@@ -146,25 +146,34 @@ function projectsShowClick(event) {
     projectNavPersonal.classList.remove('hide')
   }
   if (
+		event.target.id == 'cloud2' ||
+		event.target.id == 'cloud3' ||
+		event.target.id == 'cloud4' ||
+		event.target.id == 'backProjects' ||
 		event.target.id == 'GAProjectNav' ||
 		event.target.id == 'ProfessionalProjectNav' ||
-		event.target.id == 'PersonalProjectNav' ||
-		event.target.id == 'backProjects'
+		event.target.id == 'PersonalProjectNav'
 	) {
 		projectsNavSection.classList.add('hide');
 		projectsGASection.classList.add('hide');
 		projectsProfessionalSection.classList.add('hide');
 		projectsPersonalSection.classList.add('hide');
-		if (event.target.id == 'GAProjectNav') {
+		if (event.target.id == 'GAProjectNav' || event.target.id == 'cloud2') {
 			projectsGASection.classList.remove('hide');
 		}
-		if (event.target.id == 'ProfessionalProjectNav') {
+		if (
+			event.target.id == 'ProfessionalProjectNav' ||
+			event.target.id == 'cloud3'
+		) {
 			projectsProfessionalSection.classList.remove('hide');
 		}
-		if (event.target.id == 'PersonalProjectNav') {
+		if (
+			event.target.id == 'PersonalProjectNav' ||
+			event.target.id == 'cloud4'
+		) {
 			projectsPersonalSection.classList.remove('hide');
 		}
-    if (event.target.id == 'backProjects') {
+		if (event.target.id == 'backProjects') {
 			projectsNavSection.classList.remove('hide');
 		}
 	}
@@ -186,7 +195,10 @@ function projectsNavHide(event) {
 		event.target.id != 'projectsNavShower' &&
 		event.target.id != 'projectsNav' &&
 		event.target.id != 'projects-section' &&
-		event.target.id != 'cloud1'
+		event.target.id != 'cloud1' &&
+		event.target.id != 'cloud2' &&
+		event.target.id != 'cloud3' &&
+		event.target.id != 'cloud4'
 	) {
 		projectNavGA.classList.add('hide');
 		projectNavProfessional.classList.add('hide');

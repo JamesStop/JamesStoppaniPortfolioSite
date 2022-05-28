@@ -95,6 +95,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 3vmin;
 }
 
 .first {
@@ -215,29 +216,38 @@ li {
     justify-content: center;
     align-items: center;
     background-size: 100% 100%;
+    font-size: 5vmin;
 }
 
-
+.side-clouds {
+    cursor: pointer;
+    height: 15%;
+    width: 20%;
+    background-image: url(/assets/thinkcloudgeneral.png);
+    border: 1px solid black;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vmin;
+}
 
 .GA-projects-nav {
     position: absolute;
-    top: 25%;
-    left: 20%;
-    cursor: pointer;
+    top: 20%;
+    left: 15%;
 }
 
 .Professional-projects-nav {
     position: absolute;
-    top: 25%;
-    right: 20%;
-    cursor: pointer;
+    top: 20%;
+    right: 15%;
 }
 
 .Personal-projects-nav {
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
     left: center;
-    cursor: pointer;
 }
 
 /*carousel stuff*/
