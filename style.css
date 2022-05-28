@@ -151,6 +151,19 @@ a {
 .experiences {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+li {
+    margin: 20% 0;
+}
+
+.epoll-logo {
+    width: 80%;
 }
 
 /* Projects Section*/
