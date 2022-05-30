@@ -190,10 +190,12 @@ li {
 
 .back-projects {
     position: absolute;
+    padding: 5px;
     left: 5%;
     top: 5%;
     border: 1px solid black;
     cursor: pointer;
+    background-color: white;
 }
 
 
@@ -361,6 +363,7 @@ li {
     text-align: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    font-size: 3vmin;
 }
 
 .carousel-description {
@@ -371,9 +374,12 @@ li {
     background-color: rgba(255, 255, 255, 0.8);
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    font-size: 3vmin;
 }
 
-
+.title-link {
+    text-decoration: underline;
+}
 
 /* Contact Section */
 
@@ -398,6 +404,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100px;
     gap: 5px;
 }
 
