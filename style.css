@@ -136,8 +136,20 @@ a {
     align-items: center;
 }
 
+
+
 /* About me section */
 
+.section1 {
+    padding: 0 50px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .section1 {
+            font-size: 13px;
+        }
+}
 
 /* Experience Section */
 
