@@ -4,80 +4,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <p>James Stoppani</p>
+    </header>
     <main>
         <div class="scroll">
-            <section class="opener"></section>
+            <section class="opener">
+                <p>Learn more about me below</p>
+            </section>
 
-            <a href="#section_about_me">
+            <a href="#section_about_me" aria-label="AboutMeNavigation">
                 <div class="nav-button first" id="first">
                     <span>About Me</span>
                 </div>
             </a>
 
-            <a id="section_about_me">
+            <a id="section_about_me"></a>
                 <section class="main-sections section1" id="section1">
-                
+                    <p>My name is James Stoppani, I'm 27 years old , and I am located in Los Angeles, California.<Br><Br>I graduated from the University of Connecticut with a Bachelor of Science degree in Psychology in 2018 and relatively quickly found myself a job as a survey programming at an entertainment research company called E-Poll where for 3 years I programmed the companies custom side surveys using their own programming system after around 2 weeks of training. In late 2021, due to the Covid-19 pandemic the company had seen a decline in custom side projects and as a result I, and a good portion of fellow employees in the same department, were furloughed and eventually let go. Thanks to this, I finally found myself with the time to pursue more proper education in programming and eventually made my way to General Assembly.<br><Br>I pride myself in taking care to ensure everything I create is as fun as possible and am always looking for ways to further elevate the experience for the intended user. To some extent I believe my Psychology degree gives me an edge in predicting how the intended audience would react/perceive what I make.</p>
                 </section>
-            </a>
+            
 
-            <a href="#section_experience">
+            <a href="#section_experience" aria-label="ExperienceNavigation">
                 <div class="nav-button second" id="second">
                     <span>Experience</span>
                 </div>
             </a>
 
-            <a id="section_experience">
+            <a id="section_experience"></a>
                 <section class="main-sections section2">
-                
-                </section>
-            </a>
+                    <div class="center-area">
+                    
+                        <nav class="experience-nav-list">
+                            <ul class="experiences-list-nav"> 
+                                <li id="experience-resume">Resume</li>
+                                <li id="experience-EPoll">E-Poll</li>
+                            </ul>
+                        </nav>
+                        <div class="experience-display">
+                            <div class="experiences hide" id="resume-display">
+                                <a href="assets/JamesStoppaniResume.pdf" target="_blank" class="resume-link" aria-label="ResumeLink"><img src="assets/JamesStoppaniResume.png" alt="James Stoppani Resume" class="resume"></a>
+                            </div>
+                            <div class="experiences hide" id="EPoll-display">
+                                <img src="assets/EPollLogo.jpg" alt="EPoll Logo" class="epoll-logo">
+                                <ul class="experience-epoll-list">
+                                    <li>Company: <a href="https://www.epollsurveys.com/epoll/clients/index.htm" target="_blank" class="underlined-link" aria-label="E-PollMarketResearchLink">E-Poll Market Research</a></li>
+                                    <li>Title: Survey Programmer</li>
+                                    <li>Duration: August 2018 - November 2021</li>
+                                    <li>Job Description: Programmed, and ensured the quality of all custom side surveys in the company's personal programming language, while helping out in data checking and processing where need be.</li>
+                                </ul>
+                            </div>
 
-            <a href="#section_projects">
+
+                        </div>
+                    </div>
+                </section>
+            
+
+            <a href="#section_projects" aria-label="ProjectsNavigation">
                 <div class="nav-button third" id="third">
                     <span>Projects</span>
                 </div>
             </a>
 
-            <a id="section_projects">
+            <a id="section_projects"></a>
                 <section class="main-sections section3" id="projects-section">
-                    <div class="projects projects-start" id="projectsNav">
-                        <span class="nav-shower" id="projectsNavShower">Projects</span>
-                        <span class="GA-projects-nav hide" id="GAProjectNav">GA</span>
-                        <span class="Professional-projects-nav hide" id="ProfessionalProjectNav">Professional</span>
-                        <span class="Personal-projects-nav hide" id="PersonalProjectNav">Side/Personal</span>
+                    <div class="center-area projects-start" id="projectsNav">
+                        <div class="nav-shower" id="cloud1">
+                            <span id="projectsNavShower">Projects</span>
+                        </div>
+                        <div class="side-clouds GA-projects-nav hide" id="cloud2" aria-label="GeneralAssemblyProgectsNavigation">
+                            <span id="GAProjectNav">GA</span>
+                        </div>
+                        <div class="side-clouds Professional-projects-nav hide" id="cloud3" aria-label="ProfessionalProjectsNavigation">
+                            <span id="ProfessionalProjectNav">Professional</span>
+                        </div>
+                        <div class="side-clouds Personal-projects-nav hide" id="cloud4" aria-label="PersonalProjectsNavigation">
+                            <span id="PersonalProjectNav">Side/Personal</span>
+                        </div>
                     </div>
-                    <div class="projects projects-GA hide" id="projectsGA">
+                    <div class="center-area projects-GA hide" id="projectsGA">
                         <div class="back-projects" id="backProjects">back</div>
+                        <div class="carousel-button carousel-previous" id="carouselPrevGA">
+                            <span><</span>
+                        </div>
+                        <div class="projects-carousel">
+                            <div class="carousel-item-GA">
+                                <img src="assets/tictactoe.jpg" alt="tic-tac-toe game screen" class="images">
+                                <div class="carousel-title"><a href="https://jamesstop.github.io/Tic-Tac-Toe/" target="_blank" class="underlined-link">Tic-Tac-Toe</a></div>
+                                <div class="carousel-description">Simple Tic-Tac-Toe game programmed during the second week of GA.</div>
+                            </div>
+                            <div class="carousel-item-GA">
+                                <img src="assets/spacebattle.jpg" alt="space battle game screen" class="images">
+                                <div class="carousel-title"><a href="https://jamesstop.github.io/Space-Battle-Game/" target="_blank" class="underlined-link">Space Battle</a></div>
+                                <div class="carousel-description">Simple  space battle game programmed during the second week of GA.</div>
+                            </div>
+                        </div>
+                        <div class="carousel-button carousel-next" id="carouselNextGA">
+                            <span>></span>
+                        </div>
                     </div>
-                    <div class="projects projects-professional hide" id="projectsProfessional">
+                    <div class="center-area projects-professional hide" id="projectsProfessional">
                         <div class="back-projects" id="backProjects">back</div>
+                        <div class="carousel-button carousel-previous" id="carouselPrevProfessional">
+                            <span><</span>
+                        </div>
+                        <div class="projects-carousel">
+                            <div class="carousel-item-Professional">
+                                <img src="https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3" alt="" class="images">
+                                <div class="carousel-title">Title</div>
+                                <div class="carousel-description">Description</div>
+                            </div>
+                            <div class="carousel-item-Professional">
+                                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHikN6EXPd23Q/company-logo_200_200/0/1595359131127?e=2147483647&v=beta&t=5V_-d8vUfunqRbLI1NoSUQrJtEOhDDWxOHBPqYo-7c0" alt="" class="images">
+                                <div class="carousel-title">Title</div>
+                                <div class="carousel-description">Description</div>
+                            </div>
+                        </div>
+                        <div class="carousel-button carousel-next" id="carouselNextProfessional">
+                            <span>></span>
+                        </div>
                     </div>
-                    <div class="projects projects-personal hide" id="projectsPersonal">
+                    <div class="center-area projects-personal hide" id="projectsPersonal">
                         <div class="back-projects" id="backProjects">back</div>
+                          <div class="carousel-button carousel-previous" id="carouselPrevPersonal">
+                            <span><</span>
+                        </div>
+                        <div class="projects-carousel">
+                            <div class="carousel-item-Personal">
+                                <img src="assets/untitledidlegame.jpg" alt="untitled idle game screen" class="images">
+                                <div class="carousel-title"><a href="https://jamesstop.github.io/Untitled-Idle-Game/" target="_blank" class="underlined-link">Untitled Idle Game</a></div>
+                                <div class="carousel-description">Simple idle game I started working on before GA.</div>
+                            </div>
+                            <div class="carousel-item-Personal">
+                                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHikN6EXPd23Q/company-logo_200_200/0/1595359131127?e=2147483647&v=beta&t=5V_-d8vUfunqRbLI1NoSUQrJtEOhDDWxOHBPqYo-7c0" alt="" class="images">
+                                <div class="carousel-title">Title</div>
+                                <div class="carousel-description">Description</div>
+                            </div>
+                        </div>
+                        <div class="carousel-button carousel-next" id="carouselNextPersonal">
+                            <span>></span>
+                        </div>
                     </div>
                 </section>
-            </a>
+            
 
-            <a href="#section_contact">
+            <a href="#section_contact" aria-label="ContactNavigation">
                 <div class="nav-button fourth" id="fourth">
                     <span>Contact</span>
                 </div>
             </a>
 
-            <a id="section_contact">
+            <a id="section_contact"></a>
                 <section class="main-sections section4">
+                    <div class="center-area contacts">
+                        <div class="contact-me">
+                            <p>Contact me though any of the below sites/methods</p>
+                        </div>
+                        <ul class="contacts-list">
+                            <li>
+                                <a href="mailto:stoppanij@gmail.com?subjext=Mail from Portfolio Website" aria-label="SendEmailLink">
+                                    <div class="contact"><span class="emoji">&#128231;</span> stoppanij@gmail.com</div>
+                                </a>
+                            </li>
+                            <li>
+                                    <div class="contact"><span class="emoji">&#128222;</span>323-599-1838</div>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/james-stoppani-7a15b297/" target="_blank" aria-label="LinkdinLink">
+                                    <div class="contact"><img src="/assets/LI-In-Bug.png" alt="Linkdin Logo"><span>Linkdin.com</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/JamesStop" target="_blank" aria-label="GithubLink">
+                                    <div class="contact github-contact"><img src="/assets/GitHub-Mark-120px-plus.png" alt="Github Logo" /><span>github.com/JamesStop</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
-            </a>
+            
 
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <span>&copy;2022 James Stoppani</span>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
