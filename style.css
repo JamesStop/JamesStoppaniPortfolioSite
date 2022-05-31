@@ -20,6 +20,7 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 14px;
+    /* font-family: Roboto; */
 }
 
 header {
@@ -50,6 +51,7 @@ main {
     scroll-behavior: smooth;
     position: fixed;
     margin-top: 10vh;
+    /* font-family: Roboto; */
 }
 
 main::-webkit-scrollbar {
@@ -195,6 +197,18 @@ li {
 
 .experiences-list-nav li {
     margin: 20% 0;
+}
+
+.resume-link {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume {
+    width: 100%;
 }
 
 .epoll-logo {
