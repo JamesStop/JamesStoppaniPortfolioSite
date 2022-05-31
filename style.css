@@ -70,7 +70,6 @@ main::-webkit-scrollbar {
 
 
 section {
-    border: 1px solid black;
     scroll-snap-align: start;
     height: 85vh;
     width: 100%;
