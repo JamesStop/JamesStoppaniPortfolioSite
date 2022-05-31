@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     margin: 0;
-    background-image: url(/assets/pinksky.jpg);
+    background-image: url(assets/pinksky.jpg);
     background-size: 100% 100%;
 }
 
@@ -63,7 +63,7 @@ main::-webkit-scrollbar {
     scroll-snap-type: y proximity;
     background-image: linear-gradient(rgb(133, 236, 219), rgb(123, 194, 241));
     scroll-behavior: smooth;
-    background-image: url(/assets/skylong.png);
+    background-image: url(assets/skylong.png);
     background-size:  auto 100%;
 }
 
@@ -269,7 +269,7 @@ li {
 
 .nav-shower {
     /* font-size: 10vw; */
-    background-image: url("assets/bigthink.png");
+    background-image: url(assets/bigthink.png);
     height: 20%;
     width: 30%;
     display: flex;
@@ -283,7 +283,7 @@ li {
     cursor: pointer;
     height: 15%;
     width: 20%;
-    background-image: url(/assets/thinkcloudgeneral.png);
+    background-image: url(assets/thinkcloudgeneral.png);
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
