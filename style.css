@@ -153,7 +153,9 @@ a {
 .experience-display {
     height: 100%;
     width: 50%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20%;
+    padding: 0 10px;
 }
 
 .experiences {
@@ -167,7 +169,7 @@ a {
 }
 
 li {
-    margin: 20% 0;
+    margin-top:  5%;
 }
 
 .epoll-logo {
@@ -377,9 +379,7 @@ li {
     font-size: 3vmin;
 }
 
-.title-link {
-    text-decoration: underline;
-}
+
 
 /* Contact Section */
 
@@ -454,4 +454,8 @@ li {
 
 .hide {
     display: none;
+}
+
+.underlined-link {
+    text-decoration: underline;
 }
