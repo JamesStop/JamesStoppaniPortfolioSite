@@ -154,21 +154,30 @@ a {
 /* Experience Section */
 
 .experience-nav-list {
-    height:100%;
-    width: 15%;
-    background-color: white;
+    height:50%;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+}
+
+.experiences-list-nav {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .experience-display {
     height: 100%;
-    width: 50%;
+    width: 60%;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20%;
-    padding: 0 10px;
+    border-radius: 10%;
+    padding: 20px;
 }
+
+
 
 .experiences {
     height: 100%;
@@ -177,15 +186,29 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    border-radius: 20%;
 }
 
 li {
     margin-top:  5%;
 }
 
+.experiences-list-nav li {
+    margin: 20% 0;
+}
+
 .epoll-logo {
     width: 80%;
+}
+
+@media screen and (max-width: 850px) {
+    .epoll-logo {
+        width: 90%;
+    }
+
+    .experience-epoll-list {
+        margin-top: 10%;
+    }
 }
 
 /* Projects Section*/
@@ -275,8 +298,8 @@ li {
 /*carousel stuff*/
 
 .projects-carousel {
-    height: 50vmin;
-    width: 50vmin;
+    height: 60vmin;
+    width: 60vmin;
     background-color: black;
     position: absolute;
     border-radius: 5%;
