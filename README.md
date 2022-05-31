@@ -8,6 +8,7 @@ The site is programmed using HTML, CSS, and Javascript and hosted on Github page
 ### There are 2 main ways to access the site:
     
 1 - Visit the webpage at https://jamesstop.github.io/JamesStoppaniPortfolioSite/
+
 2 - Clone down the fork and/or clone down the repository and from with the project's folder you can open the html file through whichever method you most prefer and you should have full access to the site locally.
 
 
